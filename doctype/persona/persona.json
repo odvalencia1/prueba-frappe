@@ -1,0 +1,142 @@
+{
+ "actions": [],
+ "autoname": "field:codigo",
+ "creation": "2021-11-22 08:44:37.104087",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cedula",
+  "nombres",
+  "apellidos",
+  "fechanacimiento",
+  "telefono",
+  "direccion",
+  "actividadeconomica",
+  "estadocivil",
+  "datos_de_conyuge_section",
+  "nombresconyuge",
+  "apellidosconyuge",
+  "cedulaconyuge",
+  "fechanacimientoconyuge",
+  "trabajoconyuge",
+  "codigo"
+ ],
+ "fields": [
+  {
+   "fieldname": "cedula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cedula",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombres",
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellidos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Apellidos",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datos_de_conyuge_section",
+   "fieldtype": "Section Break",
+   "label": "Datos de conyuge"
+  },
+  {
+   "fieldname": "fechanacimiento",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de nacimiento ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Small Text",
+   "label": "Direcci\u00f3n domiciliaria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actividadeconomica",
+   "fieldtype": "Data",
+   "label": "Actividad economica",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estadocivil",
+   "fieldtype": "Select",
+   "label": "Estado civil",
+   "options": "SOLTERO/A\nCASADO/A\nDIVORCIOADO/A\nUNION_LIBRE\nVIUDO/A",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombresconyuge",
+   "fieldtype": "Data",
+   "label": "Nombres"
+  },
+  {
+   "fieldname": "apellidosconyuge",
+   "fieldtype": "Data",
+   "label": "Apellidos"
+  },
+  {
+   "fieldname": "cedulaconyuge",
+   "fieldtype": "Data",
+   "label": "Cedula"
+  },
+  {
+   "fieldname": "fechanacimientoconyuge",
+   "fieldtype": "Date",
+   "label": "Fecha de nacimiento"
+  },
+  {
+   "fieldname": "trabajoconyuge",
+   "fieldtype": "Data",
+   "label": "Trabajo "
+  },
+  {
+   "fieldname": "codigo",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Codigo",
+   "unique": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-22 10:43:57.867729",
+ "modified_by": "Administrator",
+ "module": "coperativa",
+ "name": "Persona",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

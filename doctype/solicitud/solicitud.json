@@ -1,0 +1,120 @@
+{
+ "actions": [],
+ "creation": "2021-11-22 09:30:14.922890",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fecha",
+  "solicitante",
+  "garante",
+  "asesorcomercial",
+  "montosolicitado",
+  "producto",
+  "agencia",
+  "numerocuotas",
+  "totalactivo",
+  "totalpasivo",
+  "capital"
+ ],
+ "fields": [
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "solicitante",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Datos del solicitante",
+   "options": "Persona",
+   "reqd": 1
+  },
+  {
+   "fieldname": "agencia",
+   "fieldtype": "Link",
+   "label": "Agencia",
+   "options": "Agencia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "capital",
+   "fieldtype": "Data",
+   "label": "Capital",
+   "read_only": 1
+  },
+  {
+   "fieldname": "asesorcomercial",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Asesor comercial",
+   "reqd": 1
+  },
+  {
+   "fieldname": "montosolicitado",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monto solicitado",
+   "reqd": 1
+  },
+  {
+   "fieldname": "numerocuotas",
+   "fieldtype": "Data",
+   "label": "Numero de cuotas",
+   "reqd": 1
+  },
+  {
+   "fieldname": "totalactivo",
+   "fieldtype": "Currency",
+   "label": "Total activo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "totalpasivo",
+   "fieldtype": "Currency",
+   "label": "Total pasivo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "producto",
+   "fieldtype": "Select",
+   "label": "Producto de Cr\u00e9dito",
+   "options": "Microcr\u00e9dito\nConsumo\nVivienda",
+   "reqd": 1
+  },
+  {
+   "fieldname": "garante",
+   "fieldtype": "Link",
+   "label": "Datos garante",
+   "options": "Persona",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-11-22 10:50:06.088814",
+ "modified_by": "Administrator",
+ "module": "coperativa",
+ "name": "Solicitud",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
